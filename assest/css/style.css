@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(124, 67, 129);
+}
+
+.container {
+    margin: 80px auto;
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border: 2px solid black;
+
+}
+
+
+.ejercicio1 {
+    background-color: grey;
+    background: cover;
+   
+
+
+}
+
+.ejercicio2 {
+    background-color: aqua;
+    background: cover;
+    
+}
+
+.ejercicio3 {
+    background-color: burlywood;
+    background: cover;
+    
+}
+
+#imagen {
+    border-radius: 14px;
+    width: cover;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.contenedorimg{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: cover;
+    width: cover;
+    padding: 5px;
+    gap: 10px;
+}
+
+.pusheen1{
+    background-image: url(../img/pusheen1.jpg);
+    background-size: cover;
+    width:250px;
+    height:300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px; 
+}
+
+.pusheen2{
+    background-image: url(../img/pusheen2.jpg);
+    background-size: cover;
+    width:250px;
+    height:300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;  
+    }
+
+.pusheen3{
+    background-image: url(../img/pusheen3.jpg);
+    background-size: cover;
+    width:250px;
+    height:300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px; 
+}
+
+.contenedorinput{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+}
+
+.botonsito{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    /* Tenemos que usar un margen con un tamaño en específico porque sino, no lo toma el navegador */
+    width: 300px;
+    margin: 0 auto;
+}
+
+p{
+    text-align: center;
+
+}
+
+.selects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.pass{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: baseline;
+    margin: 0 auto;
+}

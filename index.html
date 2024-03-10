@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assest/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="ejercicio1">
+
+      <h2> Pincha la imagen </h2>
+      <img id="imagen" style="height: 200px;" src="./assest/img/gohan.jpg" alt="gohan" onclick="
+    var imagen = document.querySelector('#imagen'); 
+    
+    if (imagen.style.border == '2px solid red') {
+        imagen.style.border = '';
+    } else {
+        imagen.style.border = '2px solid red';
+    }
+">
+    </div>
+    <div class="ejercicio2">
+
+      <h2> Elige tu sticker! </h2>
+      <div class="contenedorimg">
+        <div class="contenedorinput">
+          <div class="pusheen1">
+          </div>
+          <input id="a" type="text">
+        </div>
+        <div class="contenedorinput">
+          <div class="pusheen2">
+
+
+          </div>
+          <input id="b" type="text">
+        </div>
+        <div class="contenedorinput">
+          <div class="pusheen3">
+
+          </div>
+          <input id="c" type="text">
+        </div>
+      </div>
+      <p id="resultado"> Introduce la cantidad de sticker que </p>
+      <div class="botonsito"> <button onclick="
+     var inputA = document.querySelector('#a').value;
+     var inputB = document.querySelector('#b').value;
+     var inputC =  document.querySelector('#c').value;
+     var total = Number (inputA) + Number(inputB) + Number(inputC)
+     var parrafo = document.querySelector('#resultado');
+     if (total <= 10){
+     parrafo.innerHTML = 'llevas ' + total + ' stickers'
+     } else{
+      parrafo.innerHTML ='No puedes llevar mas sticker'
+     }"> Verificar</button> </div>
+
+    </div>
+
+    <div class="ejercicio3">
+
+      <h2>Coloca tu contraseña!</h2>
+      <div class="selects">
+        <select name="uno" id="uno">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select name="dos" id="dos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select name="tres" id="tres">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        
+        <p id="parrafo1"></p>
+       <div class="pass"> <button onclick="
+            var select1 = document.querySelector('#uno').value;
+            var select2 = document.querySelector('#dos').value;
+            var select3 = document.querySelector('#tres').value;
+            var parrafo1 = document.querySelector('#parrafo1');
+            
+            var resultado;
+            
+            if (select1 === '9' && select2 === '1' && select3 === '1') {
+                resultado = 'Contraseña 1 correcta';
+            } else if (select1 === '7' && select2 === '1' && select3 === '4') {
+                resultado = 'Contraseña 2 correcta';
+            } else {
+                resultado = 'Contraseña incorrecta';
+            }
+            
+            parrafo1.textContent = resultado;
+        ">Verificar</button>
+
+</div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <footer>
+    <script src="./assest/js/index.js"></script>
+  </footer>
+
+</body>
+
+</html>
